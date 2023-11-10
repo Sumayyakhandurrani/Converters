@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="temp-converter">
+            <h1>Temperature Converter</h1>
+            <form>
+                <label>Temperature in Calcius</label>
+                <input type="number" placeholder="Enter temp in calcius" id="calcius"
+                    onkeydown="if(event.key==='Enter'){tempConverter();}" required>
+                <br>
+                <label>Temperature in fahrenheit</label>
+                <h4 id="fahrenheit"></h4>
+            </form>
+            
+       
+       
+        <button onclick="tempConverter()">convert</button>
+    </div>
+        <hr>
+        <div class="area-converter-in-marla">
+            <h1>Area Converter</h1>
+            <form>
+                <label>Area in Marla</label>
+                <input type="number" placeholder="Enter area in marla" id="marla"
+                    onkeydown="if(event.key==='Enter'){areaConverterInMarla();}" required>
+                <br>
+                <label>Area in Squarfeet</label>
+                <h4 id="Squarfeet"></h4>
+            </form>
+           
+            <button onclick="areaConverterInMarla()">convert</button>
+        </div>
+        <hr>
+        <div class="area-converter-in-yard">
+            <h1>Area Converter</h1>
+            <form>
+                <label>Area in Yard</label>
+                <input type="number" placeholder="Enter area in yard" id="yard"
+                    onkeydown="if(event.key==='Enter'){areaConverterInYard();}" required>
+                <br>
+                <label>Area in Squarfeet</label>
+                <h4 id="tosquarfeet"></h4>
+            </form>
+              
+            <button onclick="areaConverterInYard()">convert</button>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
