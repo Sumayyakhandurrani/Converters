@@ -13,7 +13,7 @@
     <div class="converter">
         <div class="temp-converter">
             <h1>Temperature Converter</h1>
-            <form>
+            <form onsubmit="return false;">
                 <label>Temperature in Calcius</label>
                 <input type="number" placeholder="Enter temp in calcius" id="calcius"
                     onkeydown="if(event.key==='Enter'){tempConverter();}" required>
@@ -29,7 +29,7 @@
         <hr>
         <div class="area-converter-in-marla">
             <h1>Area Converter</h1>
-            <form>
+            <form onsubmit="return false;">
                 <label>Area in Marla</label>
                 <input type="number" placeholder="Enter area in marla" id="marla"
                     onkeydown="if(event.key==='Enter'){areaConverterInMarla();}" required>
@@ -43,7 +43,7 @@
         <hr>
         <div class="area-converter-in-yard">
             <h1>Area Converter</h1>
-            <form>
+            <form onsubmit="return false;">
                 <label>Area in Yard</label>
                 <input type="number" placeholder="Enter area in yard" id="yard"
                     onkeydown="if(event.key==='Enter'){areaConverterInYard();}" required>
